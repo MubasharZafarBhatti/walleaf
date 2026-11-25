@@ -1,0 +1,15 @@
+node_modules/
+.expo/
+.git/
+coverage/
+android/
+ios/
+dist/
+build/
+*.apk
+*.aab
+*.zip
+*.log
+.DS_Store
+.vscode/
+.idea/

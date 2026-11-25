@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Walleaf",
+    "slug": "expense-tracker-expo",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#EEF1EA",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.mubashar.expensetracker",
+      "userInterfaceStyle": "light",
+      "versionCode": 2,
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#446A5A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-font",
+      "expo-sharing",
+      "expo-system-ui",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 150,
+          "backgroundColor": "#446A5A"
+        }
+      ],
+      [
+        "expo-status-bar",
+        {
+          "hidden": false,
+          "style": "dark"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#446A5A"
+        }
+      ],
+      "./plugins/withReleaseSigning"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
